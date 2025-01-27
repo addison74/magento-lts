@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OpenMage
  *
@@ -104,8 +105,8 @@ class Mage_Core_Model_Input_Filter implements Zend_Filter_Interface
     /**
      * Add filter
      *
-     * @param string $name
-     * @param array|Zend_Filter_Interface $filter
+     * @param string|Zend_Filter_Interface $name
+     * @param string|Zend_Filter_Interface $filter
      * @param string $placement
      * @return $this
      */
@@ -122,7 +123,6 @@ class Mage_Core_Model_Input_Filter implements Zend_Filter_Interface
     /**
      * Add a filter to the end of the chain
      *
-     * @param  array|Zend_Filter_Interface $filter
      * @return $this
      */
     public function appendFilter(Zend_Filter_Interface $filter)
