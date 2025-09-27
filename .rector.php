@@ -136,10 +136,6 @@ try {
             __DIR__ . '/shell/translations.php',
             __DIR__ . '/shell/update-copyright.php',
             __DIR__ . '/tests/unit/Mage/Reports/Model/Resource/Report/CollectionTest.php',
-            # skip: files with processing issues
-            __DIR__ . '/lib/Varien/Db/Select.php',
-            __DIR__ . '/lib/Varien/File/Uploader.php',
-            __DIR__ . '/lib/Varien/Io/File.php',
         ])
         ->withPreparedSets(
             deadCode: true,
